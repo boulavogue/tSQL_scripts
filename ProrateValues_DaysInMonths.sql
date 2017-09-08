@@ -35,7 +35,7 @@ union all
 , dataframe as (
 select  distinct 
  t.OrderID
-,(SELECT MAX(x) FROM (VALUES (EOMONTH(datelist,-1)),(t.StartDate)) AS value(x)) as FromInvoiceDate
+,(SELECT MAX(x) FROM (VALUES (DateAdd(Day,1,EOMONTH(datelist,-1))),(t.StartDate)) AS value(x)) as FromInvoiceDate
 ,(SELECT MIN(x) FROM (VALUES (datelist),(t.FinalDate)) AS value(x)) as ToInvoiceDate
 ,CAST(
 	DateDiff(Day,
