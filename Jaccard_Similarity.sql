@@ -1,4 +1,6 @@
 /*
+Credit to https://stackoverflow.com/a/13445856 
+
 Use case:
 How can I write a query that can select all orders that are at least % similar to a specific order?  (Order #4 and 75% used in this example)
 
