@@ -60,6 +60,6 @@ df.OrderID
 ,2) as ProRate
 from Dataframe df
 JOIN #t t ON df.OrderID=t.OrderID
-
+option ( MaxRecursion 0 )
 
 drop table #t
