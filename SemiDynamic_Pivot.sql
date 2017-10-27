@@ -33,6 +33,11 @@ FROM #t1
 )b
 Order by b.SellDate
 
+/* Lets take a look at the varible @Columns 
+	@Columns = Headers of our pivot 
+*/
+--Select @Columns;
+
 SET @SQL = '
 WITH PivotData AS 
 (
@@ -43,7 +48,6 @@ WITH PivotData AS
 	,Price 
 	FROM #t1 
 )
-
 SELECT 
 CustID
 ,Product
@@ -57,5 +61,8 @@ FROM PivotData
 ) AS PivotResult
 ORDER BY CustID,Product' 
 
+/* Uncomment the next line to view the SQL that will run */
 --PRINT @SQL
+
+/* Run the Semi dynamic query */
 EXEC (@SQL)
