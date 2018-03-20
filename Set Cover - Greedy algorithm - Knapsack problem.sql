@@ -7,7 +7,7 @@ Use Case:
 Let's say you are in a hardware store and need to buy 21 screws. They only offer them in bags:
 
 Bag X - 16 Screws - 1.56$ per screw - 25$ Total
-Bag Y - 8 Screws - 2.25$ per screw - 18$ Total
+Bag Y - 8 Screws - 2.00$ per screw - 14$ Total
 Bag Z - 4 Screws - 1.75$ per screw - 7$ Total
 Now you have to figure out which Bags you should buy to get your 21 screws (or more!) for the lowest possible price.
 ***/
